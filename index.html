@@ -8,7 +8,7 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         .button-center {
-            top: 5%;
+            top: 20%;
             left: 50%;
             color: aqua;
             font-size: 72px;
@@ -19,6 +19,9 @@
             transform: translateX(-50%);
             background-image: url('https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg');
         }
+        .button-center:hover {
+            animation: spinning 1s linear 2;
+        }
         .browser {
             position: fixed;
             top: 30%;
@@ -27,6 +30,11 @@
             height: 720px;
             transform: translateX(-50%);
         }
+
+        @keyframes spinning {
+            0% {transform: translateX(-50%) rotate(0deg);}
+            100% {transform: translateX(-50%) rotate(360deg);}
+          }
     </style>
 </head>
 <body>

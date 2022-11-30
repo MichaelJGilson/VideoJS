@@ -32,7 +32,6 @@
 <body>
     <button id="btn" class="button-center">New Video</button>
     <script>
-        
         document.addEventListener('DOMContentLoaded', function () {
             Promise.all([d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTtDdWihF44_MlXG67XW7vtlE0i0Psp2sZUnoALteRYoNcJtyhFeWexqnwX6vXvni8QrD2wabHOUzsf/pub?output=csv", d3.autoType)])
             .then(function(data) {
@@ -66,7 +65,6 @@
         function getRandomArbitrary(min, max) {
             return Math.floor(Math.random() * (max - min) + min);
         }
-        
     </script>
 </body>
 </html> 
